@@ -1,0 +1,18 @@
+.label {
+  font-weight: 400;
+}
+.fuel {
+  float: right;
+}
+.list-group-item-heading {
+    margin-top: 10px;
+}
+.id {
+  margin-bottom: 5px;
+}
+.address-detail {
+  font-size: 12px;
+}
+.state span {
+  text-transform: lowercase;
+}

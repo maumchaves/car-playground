@@ -1,0 +1,17 @@
+{
+  "name": "data-server",
+  "version": "1.0.0",
+  "description": "Server for the Car Playground application.",
+  "repository": "https://github.com/maumchaves/car-playground/tree/master/server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mau Muñoz",
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,7 @@
+<agm-map
+         [latitude]="selectedVehicle ? selectedVehicle.coordinate.latitude : defaultCoordinate.latitude"
+         [longitude]="selectedVehicle ? selectedVehicle.coordinate.longitude : defaultCoordinate.longitude"
+         [zoom]="selectedVehicle ? zoom : defaultZoom">
+         <agm-marker *ngIf="selectedVehicle" [latitude]="selectedVehicle.coordinate.latitude"
+                     [longitude]="selectedVehicle.coordinate.longitude"></agm-marker>
+</agm-map>

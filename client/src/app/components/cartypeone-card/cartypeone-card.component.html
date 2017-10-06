@@ -1,0 +1,17 @@
+<div *ngIf="vehicle">
+  <div class="fuel"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span>{{vehicle.fuel}}</div>
+  <span class="label label-info">VIN: {{vehicle.vin}}</span>
+  <h4 class="list-group-item-heading">{{vehicle.name}}</h4>
+  <p class="id"><strong>ID:</strong> {{vehicle.id}}</p>
+  <p class="address"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+    <span class="address-detail">{{vehicle.address}}</span></p>
+  <p><strong>Engine type:</strong> {{vehicle.engineType}}</p>
+  <span class="label state"
+        [class.label-success]="vehicle.interior === 'GOOD'"
+        [class.label-danger]="vehicle.interior === 'UNACCEPTABLE'">
+        <strong>Interior:</strong> <span>{{vehicle.interior}}</span></span>
+  <span class="label state"
+        [class.label-success]="vehicle.exterior === 'GOOD'"
+        [class.label-danger]="vehicle.exterior === 'UNACCEPTABLE'">
+        <strong>Exterior:</strong> <span>{{vehicle.exterior}}</span></span>
+</div>

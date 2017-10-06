@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <li *ngFor="let vehicle of vehicles"
+        class="list-group-item"
+        [class.active]="vehicle === selectedVehicle"
+        (click)="onSelect(vehicle)">
+        <vehicle-card [source]="source" [vehicle]="vehicle"></vehicle-card>
+    </li>
+</ul>

@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="col-xs-4">
+    <header>
+      <h1>Welcome to<br>{{title}}!</h1>
+      <span>By {{author}}</span>
+    </header>
+    <ul class="nav nav-pills">
+      <li [class.active]="currentTab === 'cartypeone'"
+          (click)="onSelectTab('cartypeone')"><a href="#">Car Type One</a></li>
+      <li [class.active]="currentTab === 'cartypetwo'"
+          (click)="onSelectTab('cartypetwo')"><a href="#">Car Type Two</a></li>
+    </ul>
+    <vehicles-list [source]="currentTab"
+                   (onVehicleSelected)="onVehicleSelected($event)">
+    </vehicles-list>
+  </div>
+  <div class="col-xs-8 map-wrapper">
+    <vehicles-map [selectedVehicle]="selectedVehicle"></vehicles-map>
+  </div>
+</div>

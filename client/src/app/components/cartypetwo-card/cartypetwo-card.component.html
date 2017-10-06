@@ -1,0 +1,11 @@
+<div *ngIf="vehicle">
+  <span class="label"
+        [class.label-success]="vehicle.state === 'ACTIVE'"
+        [class.label-danger]="vehicle.state === 'INACTIVE'">
+        {{vehicle.state}}</span>
+  <h4 class="list-group-item-heading">ID: {{vehicle.id}}</h4>
+  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+  <span class="coordinates">({{vehicle.coordinate.latitude}},
+    {{vehicle.coordinate.longitude}})</span>
+  <p class="list-group-item-text type">{{vehicle.type}}</p>
+</div>
