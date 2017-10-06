@@ -5,10 +5,12 @@ import { CarTypeOne } from './../models/cartypeone';
 
 import { VehicleService } from './../services/vehicle.service';
 
+import { environment } from '../../environments/environment';
+
 @Injectable()
 export class CarTypeOneService extends VehicleService {
 
-  protected apiUrl: string = 'http://localhost:5000/api/car-type-one';
+  protected apiUrl: string = environment.apiUrl + 'car-type-one';
 
   protected extractData(response): Vehicle[] {
     let mapping = response.json().placemarks.map(function(carTypeOne) {

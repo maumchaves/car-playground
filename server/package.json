@@ -1,6 +1,7 @@
 {
   "name": "data-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "private": true,
   "description": "Server for the Car Playground application.",
   "repository": "https://github.com/maumchaves/car-playground/tree/master/server",
   "main": "server.js",

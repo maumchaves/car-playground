@@ -2,7 +2,9 @@
 
 Car Playground is a personal project aimed to explore and play with technologies such as Node.js, REST API, Google Maps API, Angular, TypeScript, Sass, Bootstrap, and others.
 
-[Live application here](http://car-playground.s3-website-eu-west-1.amazonaws.com).
+[Live application here](http://car-playground.s3-website-us-east-1.amazonaws.com).
+
+The server is running in an [AWS Elastic Beanstalk](https://aws.amazon.com/es/elasticbeanstalk) environment. The [API](#api) for this application is available at [this URL](http://car-playground.us-east-1.elasticbeanstalk.com).
 
 ### Features
 
@@ -12,10 +14,10 @@ Car Playground is a personal project aimed to explore and play with technologies
 ## Setup
 
 - Run `npm install` either in the `server` and the `client` folders.
-- Run `npm start` in the `server` folder to start the server. You should see something like `Listening on Port: 5000`.
+- Run `npm start` in the `server` folder to start the server. You should see something like `Listening on Port: 3000`.
 - Now, in a different command line tab, go to the `client` folder and run `ng serve`. This will serve the client side application and open it in your browser.
 
-## API
+## API <a id="api"></a>
 
 **`/api/car-type-one`**
 

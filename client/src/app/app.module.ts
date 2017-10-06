@@ -14,12 +14,14 @@ import { VehicleService } from './services/vehicle.service';
 import { CarTypeOneService } from './services/cartypeone.service';
 import { CarTypeTwoService } from './services/cartypetwo.service';
 
+import { environment } from '../environments/environment';
+
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     AgmCoreModule.forRoot({
-      // apiKey: 'YOUR_KEY'
+      apiKey: environment.googleMapsKey
     })
   ],
   entryComponents: [

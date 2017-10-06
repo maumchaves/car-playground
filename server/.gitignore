@@ -1,2 +1,5 @@
+# dist
+server-bundle-v*.zip
+
 # dependencies
 /node_modules
