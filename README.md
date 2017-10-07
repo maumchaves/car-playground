@@ -2,7 +2,7 @@
 
 Car Playground is a personal project aimed to explore and play with technologies such as Node.js, REST API, Google Maps API, Angular, TypeScript, Sass, Bootstrap, and others.
 
-[Live application here](http://car-playground.s3-website-us-east-1.amazonaws.com).
+[Live application here](http://car-playground.s3-website-us-east-1.amazonaws.com), hosted on [AWS S3](https://aws.amazon.com/es/s3).
 
 The server is running in an [AWS Elastic Beanstalk](https://aws.amazon.com/es/elasticbeanstalk) environment. The [API](#api) for this application is available at [this URL](http://car-playground.us-east-1.elasticbeanstalk.com).
 
