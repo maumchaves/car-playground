@@ -5,8 +5,6 @@ import 'rxjs/add/operator/toPromise';
 
 import { Vehicle } from './../models/vehicle';
 
-// Ideally this class would be abstract, but I couldn't find the way to make it works.
-
 @Injectable()
 export class VehicleService {
 
